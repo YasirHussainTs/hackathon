@@ -1,11 +1,7 @@
-
 package com.lxisoft.hackathon.quiz;
 
 public abstract class Question implements IQuestion{
-    static int totalScores ;
-
-
-    // Implement  int calculateAverageScores() 
+    static int totalScores;
 
     private String questionText;
 
@@ -17,5 +13,14 @@ public abstract class Question implements IQuestion{
         return questionText;
     }
 
+    @Override
+    public void displayQuestion() {
+        System.out.println("Question: " + getQuestionText());
+        ask();
+    }
+
     public abstract void ask();
 }
+}
+
+
