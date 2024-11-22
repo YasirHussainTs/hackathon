@@ -1,7 +1,7 @@
 package com.lxisoft.hackathon.quiz;
 
 public abstract class Question implements IQuestion{
-    static int totalScores;
+    private static int totalScores;
 
     private String questionText;
 
