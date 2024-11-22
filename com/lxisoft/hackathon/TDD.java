@@ -6,22 +6,23 @@ import com.lxisoft.hackathon.quiz.SocialTaskQuestion;
 import com.lxisoft.hackathon.quiz.TrueOrFalseQuestion;
 
 public class TDD {
+    IQuestion quiz[] =
+    { 
+    new MultipleChoiceQuestion(null, null, 0), 
+    new TrueOrFalseQuestion(null, false),
+    new SocialTaskQuestion(null)  
+    };
 
-    IQuestion quiz[] = { new MultipleChoiceQuestion(null, null, 0), 
-                         new TrueOrFalseQuestion(null, false),
-                         new SocialTaskQuestion(null)   } ;
 
-
-    public static void main(String[] args) {
+    public static void main(String[] args){
     
-    System.out.println(Welcome to quiz)                      ;
+        System.out.println("Welcome to quiz");
 
-    for( IQuestion q : quiz)
-    {
-        q.displayQuestion();
+        for( IQuestion q : quiz)
+        {
+            q.displayQuestion();
+        }
+
+        System.out.println("Thank you");
     }
-    System.out.println(Thank you)                      ;
-
-
-}
 }

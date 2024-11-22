@@ -1,4 +1,3 @@
-
 package com.lxisoft.hackathon.exception;
 
 public class SeriouslyWrongException extends Exception {
