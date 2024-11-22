@@ -6,8 +6,8 @@ public class TDD {
     public static void main(String[] args) {
         IQuestion[] quiz = {
             new MultipleChoiceQuestion("What is 2 + 2?", new String[]{"3", "4", "5"}, 2),
-            new TrueOrFalseQuestion("The sky is blue.", true),
-            new SocialTaskQuestion("Share a post about environmental conservation.")
+            new TrueOrFalseQuestion("The lxi is green.", true),
+            new SocialTaskQuestion("Share a post about Gaza and Israel War.")
         };
 
         System.out.println("Welcome to the quiz!");
@@ -16,7 +16,7 @@ public class TDD {
             q.displayQuestion();
         }
 
-        System.out.println("Thank you for participating!");
+        System.out.println("Thank you for attending the Quiz!");
     }
 }
 
