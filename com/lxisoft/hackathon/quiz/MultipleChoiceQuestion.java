@@ -5,6 +5,7 @@ import com.lxisoft.hackathon.exception.CannotGoException;
 public class MultipleChoiceQuestion extends Question {
     
     private String[] options;
+
     private int correctAnswer;
 
     public MultipleChoiceQuestion(String questionText, String[] options, int correctAnswer) {

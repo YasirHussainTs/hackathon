@@ -10,7 +10,7 @@ public class SocialTaskQuestion extends Question {
 
     @Override
     public void ask() {
-        System.out.println("Complete this task and provide proof.");
+        System.out.println("Complete this task and give proof.");
     }
 }
 

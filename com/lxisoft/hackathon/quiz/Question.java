@@ -1,8 +1,6 @@
 package com.lxisoft.hackathon.quiz;
 
-public abstract class Question implements IQuestion{
-    private static int totalScores;
-
+public abstract class Question implements IQuestion {
     private String questionText;
 
     public Question(String questionText) {
@@ -21,6 +19,4 @@ public abstract class Question implements IQuestion{
 
     public abstract void ask();
 }
-}
-
 
